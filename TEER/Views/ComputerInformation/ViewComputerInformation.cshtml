@@ -1,0 +1,126 @@
+﻿
+@{
+    ViewBag.Title = "ViewComputerInformation";
+}
+
+<h2 style="text-align:center;">This Computer Information</h2>
+
+<style>
+    table {
+        width: 83%;
+        border-collapse: collapse;
+        margin: 30px auto;
+    }
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+        background: #eee;
+    }
+
+    th {
+        background: #3498db;
+        color: white;
+        font-weight: bold;
+    }
+
+    td, th {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: left;
+        font-size: 18px;
+    }
+</style>
+
+
+
+<table >
+    <tr>
+        <th>Property Name</th>
+        <th>Value</th>
+    </tr>
+    <tr>
+        <td>IP Address: </td>
+        <td>@ViewBag.ipAddress</td>
+    </tr>
+    <tr>
+        <td>Computer Name: </td>
+        <td>@ViewBag.GetComputerName</td>
+    </tr>
+    <tr>
+        <td>MAC Address: </td>
+        <td>@ViewBag.GetMACAddress</td>
+    </tr>
+    @*<tr>
+        <td>Processor Id: </td>
+        <td>@ViewBag.GetProcessorId</td>
+    </tr>
+    <tr>
+        <td>HDD Serial Number: </td>
+        <td>@ViewBag.GetHDDSerialNo</td>
+    </tr>
+    <tr>
+        <td>Board Maker: </td>
+        <td>@ViewBag.GetBoardMaker</td>
+    </tr>
+    <tr>
+        <td>Board Product Id: </td>
+        <td>@ViewBag.GetBoardProductId</td>
+    </tr>
+    <tr>
+        <td>Processor Information: </td>
+        <td>@ViewBag.GetProcessorInformation</td>
+    </tr>
+    <tr>
+        <td>OS Information: </td>
+        <td>@ViewBag.GetOSInformation</td>
+    </tr>
+    <tr>
+        <td>Current Language: </td>
+        <td>@ViewBag.GetCurrentLanguage</td>
+    </tr>
+    <tr>
+        <td>CPU Speed In GHz: </td>
+        <td>@ViewBag.GetCpuSpeedInGHz</td>
+    </tr>
+    <tr>
+        <td>Default IPGateway: </td>
+        <td>@ViewBag.GetDefaultIPGateway</td>
+    </tr>
+    <tr>
+        <td>CPU Current Clock Speed: </td>
+        <td>@ViewBag.GetCPUCurrentClockSpeed</td>
+    </tr>
+    <tr>
+        <td>CPU Manufacturer: </td>
+        <td>@ViewBag.GetCPUManufacturer</td>
+    </tr>
+    <tr>
+        <td>Number Of Ram Slots: </td>
+        <td>@ViewBag.GetNoRamSlots</td>
+    </tr>
+    <tr>
+        <td>Physical Memory: </td>
+        <td>@ViewBag.GetPhysicalMemory</td>
+    </tr>
+    <tr>
+        <td>Account Name: </td>
+        <td>@ViewBag.GetAccountName</td>
+    </tr>
+    <tr>
+        <td>BIOS Caption</td>
+        <td>@ViewBag.GetBIOScaption</td>
+    </tr>
+    <tr>
+        <td>BIOS Serial Number: </td>
+        <td>@ViewBag.GetBIOSserNo</td>
+    </tr>
+    <tr>
+        <td>BIOS Maker: </td>
+        <td>@ViewBag.GetBIOSmaker</td>
+    </tr>
+    <tr>
+        <td>CD Rom Drive: </td>
+        <td>@ViewBag.GetCdRomDrive</td>
+    </tr>*@
+    
+    
+</table>

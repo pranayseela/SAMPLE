@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Disclaimer";
+}
+<script language="javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script language="javascript" type="text/javascript">
+    function AcceptTermAndcondition() {
+
+        if ($("#chkcondition").is(':checked')) {
+        }
+        else {
+            alert("Please accept term and condition");
+            return false;
+        }
+    }
+</script>
+
+<div class="row" style="margin-top:30%">
+    <div class="col-md-12">
+        @using (Html.BeginForm("", ""))
+        {
+            <div>
+                @Html.TextArea("Termandcondition", "By Logging in and certifying my T&E Record, I Understand that I am not knowingly and/or willfully falsifying a required record. I understand that if an T&E Record is not present, it is my responsibility to add it to ensure my HOS is properly recorded.", new { @style= "height:100px; width:100%;", @id = "txtcondition" })
+            </div>@Html.CheckBox("Condition", false, new { @id = "chkcondition" })<a href="#">Accept</a>
+            <br />
+            <br />
+            <input type="submit" value="submit" onclick="javascript:return AcceptTermAndcondition();" />
+            <br />
+            <div style="color:Red">@ViewBag.Message</div>
+        }
+        </div>
+</div>
